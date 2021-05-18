@@ -1,0 +1,41 @@
+body {
+    padding-left: 17rem;
+}
+
+#sideNav {
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+    #imgHolder {
+        height: 40%;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        background-color: pink;
+        font-size: 1.5rem;
+    }
+    #navLinks {
+        display: flex;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+#rightSection {
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    section {
+        min-height: 100vh;
+    }
+}
