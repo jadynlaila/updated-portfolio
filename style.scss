@@ -8,6 +8,16 @@ body {
     display: block;
 }
 
+section {
+    padding-top: 10%!important;
+    padding-right: 5%!important;
+    .section-title {
+        font-size: 6rem;
+    }
+}
+
+// add the little line things with the circle from the example on the left of section in fo
+//add icons to side nav
 #sideNav {
     button {
         z-index: 1000;
@@ -19,7 +29,7 @@ body {
     top: 0;
     left: 0;
     display: flex;
-    width: 17rem;
+    width: 15rem;
     height: 100vh;
     align-items: center;
     flex-direction: column;
@@ -54,7 +64,7 @@ body {
     // .linksContainerContainer {
     align-items: center;
     flex-basis: auto;
-    display: flex!important;
+    display: flex !important;
     flex-grow: 1;
     #linksContainer {
         flex-direction: column;
@@ -66,19 +76,112 @@ body {
     }
 }
 
+.progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    .skill {
+        padding: 10px 0;
+        margin: 0;
+        text-transform: uppercase;
+        display: block;
+        font-family: sans-serif;
+        color: pink;
+        .val {
+            float: right;
+            font-style: normal;
+        }
+    }
+}
+
+.progress-bar-wrap {
+    background-color: white;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 10px;
+    transition: 0.9s;
+    background-color: #8c559c;
+}
+
+.progress-bar {
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    color: red;
+    text-align: center;
+}
+
+#about {
+    .section-title {}
+    .firstPara {
+        margin-left: 2%;
+    }
+    .secondPara {
+        margin-left: 2%;
+    }
+    .midAbout {
+        display: flex;
+    }
+    .container {
+        margin: 0 auto;
+        float: right;
+    }
+    #imgDiv {
+        float: left;
+        background-color: red;
+        height: 10px;
+        width: 10px:
+    }
+}
+
+#education {
+    section-title {
+        color: orange;
+    }
+    .school-top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 3% auto;
+        margin-left: 2%;
+        .school-title {
+            color: black;
+            font-size: 1.5rem;
+        }
+        .school-date {
+            color: grey;
+        }
+    }
+    .school-info {
+        margin-left: 2%;
+    }
+    // add the little line things with the circle from the example on the left of section in fo
+}
+
+#rightSection {
+    background-color: orange;
+    margin-left: 15rem;
+    section {
+        min-height: 100vh;
+    }
+}
+
 @media (max-width: 992px) {
     #sideNav {
-        // text-align: center;
-        // position: fixed;
-        // left: 0;
-        // top: 0;
-        // right: 0;
-        // height: 100px;
-        // width: 100%;
-        // background-color: #8b61da;
-        // flex-wrap: nowrap;
-        // flex-direction: row;
-        // justify-content: flex-start;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 100px;
+        width: 100%;
+        background-color: #8b61da;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
         #selfImage {
             align-items: center;
             background-color: red;
@@ -110,13 +213,26 @@ body {
         }
         // }
     }
+    #rightSection {
+        background-color: orange;
+        margin-left: 0rem;
+        section {
+            min-height: 100vh;
+        }
+    }
+    section {
+        padding-top: 20%!important;
+    }
 }
 
-#rightSection {
-    background-color: yellow;
-    width: calc(100vh-17rem);
-    margin-left: 17rem;
+@media(max-width:576px) {
     section {
-        min-height: 100vh;
+        padding-top: 30%!important;
+    }
+}
+
+@media(max-width:310px) {
+    section {
+        padding-top: 50%!important;
     }
 }

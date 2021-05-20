@@ -15,43 +15,156 @@
     <link rel='shortcut icon' href='Untitled.png' , 'type='image/x-icon '>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg" id="sideNav">
+        <nav class="navbar navbar-expand-md" id="sideNav">
             <div class="media" id="selfImage"><img src="" class="rounded-circle" ></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse linksContainerContainer" id="navbarSupportedContent">
                 <ul class="navbar-nav" id="linksContainer">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SKILLS</a>
+                    <a class="nav-link" href="#skills">SKILLS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PORTFOLIO</a>
+                    <a class="nav-link" href="#myWork">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">EDUCATION</a>
+                    <a class="nav-link" href="#education">EDUCATION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
                 </ul>
                 </div>
     </nav>
-    <!-- <div id="rightSection">
-        <section id="about"></section>
-        <section id="skills">skills</section>
-        <section id="myWork">my work</section>
-        <section id="education"> education</section>
-        <section id="contact">contact</section>
-    </div> -->
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
+
+    <div id="rightSection">
+        <section id="intro">
+            <h1 class="title">Hi, I'm Jadyn!<span> An Arizona based developer</span>
+    </h1>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>ABOUT ME</h2>
+        </div>
+        <div class="firstPara">While I am super interested in the world of coding, most of my time outside that is spent playing music or reading! I've played bass for years, keep a large book collection, and dedicate a few hours out of each day to all of my hobbies.</div>
+        <div class="midAbout">
+            <div class="" id="imgDiv"><img src="" alt="blah" class="img-fluid"></div>
+
+            <div class="container">
+                <div class="col lg-8">
+                    <div class="row">
+                        <div class="col lg-3">Phone: +602 615 8256</div>
+                        <div class="col lg-3">Email: jaycal2013@gmail.com</div>
+                    </div>
+                    <div class="row">
+                        <div class="col lg-3">Birthday: 05/10</div>
+                        <div class="col lg-3">Age: 17</div>
+                    </div>
+                    <div class="row">
+                        <div class="col lg-3">City: Phoenix, Arizona</div>
+                        <div class="col lg-3"><a href="#contact">Contact Me!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secondPara">My dream workplace environment would consist of working on a small, friendly, and motivated team!</div>
+    </section>
+
+    <section id="skills" class="container">
+        <div class="section-title">
+            <h2>SKILLS</h2>
+        </div>
+        <div class="skills-para">
+            With a focus on full stack development, it's been important to remain well rounded! Any and all skills are always being improved upon.
+        </div>
+        <div class="row skills-content">
+            <div>
+                <div class="progress">
+                    <span class="skill">HTML <i class='val'>80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill">HTML <i class='val'>80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill">HTML <i class='val'>80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="progress">
+                    <span class="skill">HTML <i class='val'>80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill">HTML <i class='val'>80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill">HTML <i class='val'>80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="myWork">my work</section>
+    <section id="education" class="container">
+        <div class="section-title">
+            <h2>EDUCATION</h2>
+        </div>
+        <div id="school1-container" class="school-container">
+            <div class="school-top">
+                <div class="school-title" id="school1-title">WEST-MEC</div>
+                <div class="school-date" id="school1-date">August 2020-Current
+                    <div class="grad-date">Est graduation year: 2022</div>
+                </div>
+            </div>
+            <div class="school-info " style="width: 50%">Deciding to take an alternative approach off the beaten path, I enrolled in West-Mec's Coding Program my Sophomore year of Highschool! Offering a great curriculum and opportunities for certification, I have been able to further my expertise
+                in programming here!</div>
+        </div>
+        <div id="school2-container" class="school-container">
+            <div class="school-top">
+                <div class="school-title" id="school1-title">TOLLESON UNION HIGH SCHOOL</div>
+                <div class="school-date" id="school2-date">August 2018-Current
+                    <div class="grad-date">Est graduation year: 2022</div>
+                </div>
+            </div>
+            <div class="school-info" style="width: 50%">Staying in the top 10% of my class and being active in clubs here has kept me motivated and responible for the past 3 years!</div>
+        </div>
+    </section>
+    <section id="contact">contact</section>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+
 </html>
