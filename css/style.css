@@ -27,7 +27,7 @@ section .section-title {
   height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-color: #8b61da;
+  background-color: #2E0854;
   align-items: center;
   flex-basis: auto;
   display: flex !important;
@@ -55,7 +55,7 @@ section .section-title {
   background-color: orange;
   width: 100px;
   height: 100px;
-  border: orangered solid 10px;
+  border: #ff4500 solid 10px;
   align-content: center;
   justify-content: center;
 }
@@ -66,7 +66,8 @@ section .section-title {
 }
 
 #sideNav #linksContainer a {
-  color: #b394ec;
+  color: #8b61da;
+  font-weight: bolder;
 }
 
 .progress {
@@ -82,7 +83,7 @@ section .section-title {
   text-transform: uppercase;
   display: block;
   font-family: sans-serif;
-  color: pink;
+  color: #2E0854;
 }
 
 .progress .skill .val {
@@ -91,14 +92,14 @@ section .section-title {
 }
 
 .progress-bar-wrap {
-  background-color: white;
+  background-color: #b394ec;
   height: 10px;
 }
 
 .progress-bar {
   height: 10px;
   transition: 0.9s;
-  background-color: #8c559c;
+  background-color: #2E0854;
 }
 
 .progress-bar {
@@ -117,8 +118,22 @@ section .section-title {
   margin-left: 2%;
 }
 
+#about .midAbout {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
 #about .container {
   margin: 0 auto;
+  float: right;
+}
+
+#about #imgDiv {
+  float: left;
+  background-color: red;
+  height: 10px;
+  width: 10px;
 }
 
 #education section-title {
@@ -146,13 +161,34 @@ section .section-title {
   margin-left: 2%;
 }
 
+#myWork #myLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
 #rightSection {
-  background-color: orange;
+  background-color: #F5ECCD;
   margin-left: 15rem;
 }
 
 #rightSection section {
   min-height: 100vh;
+}
+
+#stickyButton {
+  width: fit-content;
+  padding: 5px;
+  font-size: 5rem;
+  position: sticky;
+  right: 5px;
+  bottom: 5px;
+  float: right;
+}
+
+#stickyButton a {
+  color: #2E0854;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 @media (max-width: 992px) {
@@ -198,8 +234,8 @@ section .section-title {
     color: #b394ec;
   }
   #rightSection {
-    background-color: orange;
     margin-left: 0rem;
+    overflow: hidden;
   }
   #rightSection section {
     min-height: 100vh;
